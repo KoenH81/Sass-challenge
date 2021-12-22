@@ -28,6 +28,7 @@ article section {
   -webkit-box-shadow: 10px 10px 19px -4px green;
   box-shadow: 10px 10px 19px -4px green;
   margin: 16px;
+  padding: 16px;
   clear: both;
   overflow: auto;
   -webkit-box-sizing: border-box;

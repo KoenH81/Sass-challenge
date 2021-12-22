@@ -1,3 +1,4 @@
+$padding1: 16px;
 body {
   font: 100% "Space Mono", monospace;
   color: #2748b3;
@@ -34,6 +35,7 @@ article {
     border: 1px silver solid;
     @include shadow($color: green);
     margin: 16px;
+    padding: $padding1;
     clear: both;
     overflow: auto;
     box-sizing: border-box;
@@ -81,7 +83,7 @@ h1 {
 h6 {
   text-align: center;
   font-size: 2em;
-  padding: 32px;
+  padding: 2 * $padding1;
   margin-bottom: 0px;
 }
 
@@ -90,7 +92,7 @@ h6 {
 .error,
 .warning {
   border: 1px solid #ccc;
-  padding: 16px;
+  padding: $padding1;
   margin: 16px;
   color: #2748b3;
   background-color: #000;
