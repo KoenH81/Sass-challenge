@@ -25,9 +25,8 @@ article section {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   border: 1px silver solid;
-  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  padding: 16px;
+  -webkit-box-shadow: 10px 10px 19px -4px green;
+  box-shadow: 10px 10px 19px -4px green;
   margin: 16px;
   clear: both;
   overflow: auto;
@@ -35,7 +34,7 @@ article section {
           box-sizing: border-box;
 }
 
-article section #selling-points {
+article #selling-points {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;

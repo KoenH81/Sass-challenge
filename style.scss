@@ -20,7 +20,11 @@ body {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   background-attachment: fixed;
 }
-
+@mixin shadow($color: red) {
+  -webkit-box-shadow: 10px 10px 19px -4px $color;
+  -moz-box-shadow: 10px 10px 19px -4px $color;
+  box-shadow: 10px 10px 19px -4px $color;
+}
 article {
   display: flex;
   flex-wrap: wrap;
@@ -28,21 +32,17 @@ article {
     flex-grow: 1;
     flex-basis: 45%;
     border: 1px silver solid;
-    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    padding: 16px;
+    @include shadow($color: green);
     margin: 16px;
     clear: both;
     overflow: auto;
     box-sizing: border-box;
-    #selling-points {
-      flex-grow: 2;
-      flex-basis: 100%;
-    }
+  }
+  #selling-points {
+    flex-grow: 2;
+    flex-basis: 100%;
   }
 }
-
 article pre {
   background: #000;
   border: 1px solid #ddd;
